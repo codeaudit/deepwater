@@ -8,6 +8,13 @@ public class ImageDataSet {
     private int height;
     private int numClasses;
 
+    public ImageDataSet(int width, int height, int channels){
+        this.height = height;
+        this.width = width;
+        this.channels = channels;
+        this.numClasses = 10;
+    }
+
     public ImageDataSet(int width, int height, int channels, int numClasses){
         this.height = height;
         this.width = width;
